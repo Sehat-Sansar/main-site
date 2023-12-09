@@ -1,6 +1,7 @@
 .container{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
     height: 100vh;
 
 
@@ -9,7 +10,7 @@
     border-right: 1.5px solid rgb(235, 235, 235);
     width: 21%;
     height: 100vh;
-    box-shadow: 0 0px 0px 2px rgba(240, 240, 240, 0.3);
+    /* box-shadow: 0 0px 0px 2px rgba(240, 240, 240, 0.3); */
 }
 .dash-body{
     width: 79%;
@@ -19,7 +20,16 @@
 .menu-container{
     width: 100%;
     border-spacing: 0;
-    
+    padding-top: 22px;
+}
+
+#edoc-logo{
+    color: rgb(1, 1, 1);
+    font-weight: bolder;
+    font-size: 35px;
+    padding-left: 20px;
+    animation: transitionIn-Y-over 0.5s;
+    text-shadow: 1.5px 1.5px;
 }
 
 .profile-title{
@@ -46,15 +56,18 @@
 }
 
 .profile-container{
-    border-bottom: 1.5px solid rgb(235, 235, 235);
+    /* border-bottom: 1.5px solid rgb(235, 235, 235); */
     /*border-radius: 6px;*/
-    padding-top: 18%;
+    padding-top: 5%;
     padding-bottom: 12%;
     /*box-shadow: 0 0 3px rgba(52,58,64,0.08);*/
     text-align: center;
     
 }
 
+.hori{
+    width: 80%;
+}
 
 /*.menu-items1{
     font-weight: 500;

@@ -49,25 +49,11 @@
         <div class="menu">
             <table class="menu-container" border="0">
                 <tr>
-                    <td style="padding:10px" colspan="2">
-                        <table border="0" class="profile-container">
-                            <tr>
-                                <td width="30%" style="padding-left:20px" >
-                                    <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
-                                </td>
-                                <td style="padding:0px;margin:0px;">
-                                    <p class="profile-title">Administrator</p>
-                                    <p class="profile-subtitle">admin@edoc.com</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
-                                </td>
-                            </tr>
-                    </table>
+                    <td >
+                       <br> <font id="edoc-logo">SehatSansaar </font><br><br><br><br>
                     </td>
-                </tr>
+                    
+               </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-dashbord menu-active menu-icon-dashbord-active" >
                         <a href="index.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Dashboard</p></a></div></a>
@@ -91,6 +77,27 @@
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-patient">
                         <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">Patients</p></a></div>
+                    </td>
+                </tr>
+                <tr><td><br><br><hr class="hori"></td></tr>
+                <tr>
+                    <td style="padding:0px 10px 10px" colspan="2">
+                        <table border="0" class="profile-container">
+                            <tr>
+                                <td width="30%" style="padding-left:20px" >
+                                    <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
+                                </td>
+                                <td style="padding:0px;margin:0px;">
+                                    <p class="profile-title">Administrator</p>
+                                    <p class="profile-subtitle">admin@edoc.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                </td>
+                            </tr>
+                    </table>
                     </td>
                 </tr>
             </table>
@@ -234,33 +241,23 @@
                         <table width="100%" border="0" class="dashbord-tables">
                             <tr>
                                 <td>
-                                    <p style="padding:10px;padding-left:48px;padding-bottom:0;font-size:23px;font-weight:700;color:var(--primarycolor);">
+                                    <p style="text-align:center;padding:10px;padding-left:48px;padding-bottom:0;font-size:27px;font-weight:700;color:var(--primarycolor);">
                                         Upcoming Appointments until Next <?php  
                                         echo date("l",strtotime("+1 week"));
                                         ?>
                                     </p>
-                                    <p style="padding-bottom:19px;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
+                                    <p style="text-align:center;padding-bottom:19px;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
                                         Here's Quick access to Upcoming Appointments until 7 days<br>
                                         More details available in @Appointment section.
                                     </p>
 
                                 </td>
-                                <td>
-                                    <p style="text-align:right;padding:10px;padding-right:48px;padding-bottom:0;font-size:23px;font-weight:700;color:var(--primarycolor);">
-                                        Upcoming Sessions  until Next <?php  
-                                        echo date("l",strtotime("+1 week"));
-                                        ?>
-                                    </p>
-                                    <p style="padding-bottom:19px;text-align:right;padding-right:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
-                                        Here's Quick access to Upcoming Sessions that Scheduled until 7 days<br>
-                                        Add,Remove and Many features available in @Schedule section.
-                                    </p>
-                                </td>
+                                
                             </tr>
                             <tr>
                                 <td width="50%">
                                     <center>
-                                        <div class="abc scroll" style="height: 200px;">
+                                        <div class="abc scroll" >
                                         <table width="85%" class="sub-table scrolldown" border="0">
                                         <thead>
                                         <tr>    
@@ -358,9 +355,32 @@
                                         </div>
                                         </center>
                                 </td>
-                                <td width="50%" style="padding: 0;">
+                                
+                            </tr>
+                            <tr>
+                            <td>
                                     <center>
-                                        <div class="abc scroll" style="height: 200px;padding: 0;margin: 0;">
+                                        <a href="schedule.php" class="non-style-link"><button class="btn-primary btn" style="width:85%">Show all Sessions</button></a>
+                                    </center><br>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                    <p style="text-align:center;padding:10px;padding-left:48px;padding-bottom:0;font-size:27px;font-weight:700;color:var(--primarycolor);">
+                                        Upcoming Sessions  until Next <?php  
+                                        echo date("l",strtotime("+1 week"));
+                                        ?>
+                                    </p>
+                                    <p style="padding-bottom:19px;text-align:center;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
+                                        Here's Quick access to Upcoming Sessions that Scheduled until 7 days<br>
+                                        Add,Remove and Many features available in @Schedule section.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td width="50%" style="padding: 0;">
+                                    <center>
+                                        <div class="abc scroll" style="padding: 0;margin: 0;">
                                         <table width="85%" class="sub-table scrolldown" border="0" >
                                         <thead>
                                         <tr>
@@ -448,11 +468,7 @@
                                         <a href="appointment.php" class="non-style-link"><button class="btn-primary btn" style="width:85%">Show all Appointments</button></a>
                                     </center>
                                 </td>
-                                <td>
-                                    <center>
-                                        <a href="schedule.php" class="non-style-link"><button class="btn-primary btn" style="width:85%">Show all Sessions</button></a>
-                                    </center>
-                                </td>
+                                
                             </tr>
                         </table>
                     </td>
