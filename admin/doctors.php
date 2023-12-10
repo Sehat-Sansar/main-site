@@ -321,7 +321,7 @@
             $tele=$row['doctel'];
             echo '
             <div id="popup1" class="overlay">
-                    <div class="popup">
+                    <div class="popup" style="height:600px;">
                     <center>
                         <h2></h2>
                         <a class="close" href="doctors.php">&times;</a>
@@ -421,7 +421,7 @@
                 if($error_1!='4'){
                 echo '
             <div id="popup1" class="overlay">
-                    <div class="popup">
+                    <div class="popup" style="overflow-y:scroll;">
                     <center>
                     
                         <a class="close" href="doctors.php">&times;</a> 
