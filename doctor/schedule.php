@@ -343,7 +343,7 @@
             $result12= $database->query($sqlmain12);
             echo '
             <div id="popup1" class="overlay">
-                    <div class="popup" style="width: 70%;">
+                    <div class="popup" style="width: 60%;height:600px" >
                     <center>
                         <h2></h2>
                         <a class="close" href="schedule.php">&times;</a>
@@ -352,7 +352,7 @@
                             
                         </div>
                         <div class="abc scroll" style="display: flex;justify-content: center;">
-                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                        <table width="70%" class="sub-table scrolldown add-doc-form-container" border="0">
                         
                             <tr>
                                 <td>
@@ -365,19 +365,14 @@
                                 <td class="label-td" colspan="2">
                                     <label for="name" class="form-label">Session Title: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
-                                    '.$title.'<br><br>
-                                </td>
-                                
+                                '.$title.'<br><br>
+                            </td>
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Email" class="form-label">Doctor of this session: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
                                 '.$docname.'<br><br>
                                 </td>
@@ -386,22 +381,19 @@
                                 <td class="label-td" colspan="2">
                                     <label for="nic" class="form-label">Scheduled Date: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
-                                '.$scheduledate.'<br><br>
+                                '.$scheduledate.'<br>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Tele" class="form-label">Scheduled Time: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
-                                '.$scheduletime.'<br><br>
+                                '.$scheduletime.'<br>
                                 </td>
                             </tr>
+                           
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="spec" class="form-label"><b>Patients that Already registerd for this session:</b> ('.$result12->num_rows."/".$nop.')</label>
@@ -413,7 +405,7 @@
                             <tr>
                             <td colspan="4">
                                 <center>
-                                 <div class="abc scroll">
+                                 <div class="abc scroll" style="height: 160px;">
                                  <table width="100%" class="sub-table scrolldown" border="0">
                                  <thead>
                                  <tr>   
@@ -445,16 +437,12 @@
                                          if($result->num_rows==0){
                                              echo '<tr>
                                              <td colspan="7">
-                                             <br><br><br><br>
                                              <center>
-                                             <img src="../img/notfound.svg" width="25%">
-                                             
-                                             <br>
                                              <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
                                              <a class="non-style-link" href="appointment.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Show all Appointments &nbsp;</font></button>
                                              </a>
                                              </center>
-                                             <br><br><br><br>
+                                             
                                              </td>
                                              </tr>';
                                              
