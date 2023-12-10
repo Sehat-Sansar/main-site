@@ -267,7 +267,7 @@
                                     
                                     </th>
                                 
-                                <th class="table-headin" style="font-size:10px">
+                                <th class="table-headin" >
                                     
                                     Session Date & Time
                                     
@@ -336,7 +336,7 @@
                                         <td>
                                         '.substr($title,0,15).'
                                         </td>
-                                        <td style="text-align:center;font-size:12px;">
+                                        <td style="text-align:center;font-size:15px;">
                                             '.substr($scheduledate,0,10).' <br>'.substr($scheduletime,0,5).'
                                         </td>
                                         
