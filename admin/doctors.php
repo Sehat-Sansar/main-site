@@ -421,7 +421,7 @@
                 if($error_1!='4'){
                 echo '
             <div id="popup1" class="overlay">
-                    <div class="popup">
+                    <div class="popup" style="overflow-y:scroll;">
                     <center>
                     
                         <a class="close" href="doctors.php">&times;</a> 
