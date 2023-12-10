@@ -367,7 +367,7 @@
             $address=$row["paddress"];
             echo '
             <div id="popup1" class="overlay">
-                    <div class="popup">
+                    <div class="popup" style="height:540px;">
                     <center>
                         <a class="close" href="patient.php">&times;</a>
                         <div class="content">
@@ -386,32 +386,23 @@
                                 <td class="label-td" colspan="2">
                                     <label for="name" class="form-label">Patient ID: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
-                                    P-'.$id.'<br><br>
-                                </td>
-                                
+                                P-'.$id.'<br><br>
+                            </td>
                             </tr>
-                            
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
                                     <label for="name" class="form-label">Name: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
                                     '.$name.'<br><br>
                                 </td>
-                                
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Email" class="form-label">Email: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
                                 '.$email.'<br><br>
                                 </td>
@@ -420,8 +411,6 @@
                                 <td class="label-td" colspan="2">
                                     <label for="nic" class="form-label">NIC: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
                                 '.$nic.'<br><br>
                                 </td>
@@ -430,8 +419,6 @@
                                 <td class="label-td" colspan="2">
                                     <label for="Tele" class="form-label">Telephone: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
                                 '.$tele.'<br><br>
                                 </td>
@@ -439,28 +426,22 @@
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="spec" class="form-label">Address: </label>
-                                    
                                 </td>
-                            </tr>
-                            <tr>
-                            <td class="label-td" colspan="2">
-                            '.$address.'<br><br>
-                            </td>
+                                <td class="label-td" colspan="2">
+                                    '.$address.'<br><br>
+                                </td>
                             </tr>
                             <tr>
                                 
                                 <td class="label-td" colspan="2">
                                     <label for="name" class="form-label">Date of Birth: </label>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td class="label-td" colspan="2">
-                                    '.$dob.'<br><br>
-                                </td>
-                                
+                                '.$dob.'<br><br>
+                            </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
+                                <td colspan="4" style="text-align:center;">
                                     <a href="patient.php"><input type="button" value="OK" class="login-btn btn-primary-soft btn" ></a>
                                 
                                     
