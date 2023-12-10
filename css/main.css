@@ -94,7 +94,7 @@ body{
 /* -----------Buttons---------------*/
 .btn{
     cursor: pointer;
-    padding: 8px 20px;
+    padding: 2px 20px;
     outline: none;
     text-decoration: none;
     font-size: 15px;
@@ -197,14 +197,9 @@ body{
 
 .abc{
   width: 100%;
-  height: 470px;
+  height: 430px;
   overflow: visible;
 }
-
-
-
-
-
         
 .overlay {
     position: fixed;
