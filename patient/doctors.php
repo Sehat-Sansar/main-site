@@ -48,27 +48,12 @@
     <div class="container">
         <div class="menu">
             <table class="menu-container" border="0">
-                <tr>
-                    <td style="padding:10px" colspan="2">
-                        <table border="0" class="profile-container">
-                            <tr>
-                                <td width="30%" style="padding-left:20px" >
-                                    <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
-                                </td>
-                                <td style="padding:0px;margin:0px;">
-                                    <p class="profile-title"><?php echo substr($username,0,13)  ?>..</p>
-                                    <p class="profile-subtitle"><?php echo substr($useremail,0,22)  ?></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
-                                </td>
-                            </tr>
-                    </table>
+            <tr>
+                    <td >
+                       <br> <font id="edoc-logo">SehatSansaar </font><br><br><br><br>
                     </td>
-                
-                </tr>
+                    
+               </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-home " >
                         <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">Home</p></a></div></a>
@@ -95,10 +80,33 @@
                         <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
                     </td>
                 </tr>
+                </tr>
+                <tr><td><br><br><br><hr class="hori"></td>
+            </tr>
+                <tr>
+                    <td style="padding:0px 10px 10px" colspan="2">
+                        <table border="0" class="profile-container">
+                            <tr>
+                                <td width="30%" style="padding-left:20px" >
+                                    <img src="../img/user.png" alt="" width="100%" style="border-radius:50%">
+                                </td>
+                                <td style="padding:0px;margin:0px;">
+                                    <p class="profile-title"><?php echo substr($username,0,13)  ?>..</p>
+                                    <p class="profile-subtitle"><?php echo substr($useremail,0,22)  ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn" style ="padding:10px"></a>
+                                </td>
+                            </tr>
+                    </table>
+                    </td>
+                </tr>
                 
             </table>
         </div>
-        <div class="dash-body">
+        <div class="dash-body" style="margin-top: 15px;padding-right: 50px">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                     <td width="13%">
@@ -143,9 +151,6 @@
                         echo $date;
                         ?>
                         </p>
-                    </td>
-                    <td width="10%">
-                        <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
                     </td>
 
 
