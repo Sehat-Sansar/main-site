@@ -285,12 +285,12 @@
             $tele=$row['doctel'];
             echo '
             <div id="popup1" class="overlay">
-                    <div class="popup">
+                    <div class="popup" style="height: 600px;">
                     <center>
                         <h2></h2>
                         <a class="close" href="settings.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            Sehat Sansar Web App<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
@@ -399,7 +399,7 @@
             if($error_1!='4'){
                     echo '
                     <div id="popup1" class="overlay">
-                            <div class="popup">
+                            <div class="popup" style="overflow-y:scroll;">
                             <center>
                             
                                 <a class="close" href="settings.php">&times;</a> 
