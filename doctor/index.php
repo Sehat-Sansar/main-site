@@ -241,12 +241,12 @@
                                                 </td>
 
                                                 <td style="width: 25%;">
-                                                    <div  class="dashboard-items"  style="padding:20px;margin:auto;width:95%;display: flex;padding-top:21px;padding-bottom:21px;">
+                                                    <div  class="dashboard-items"  style="padding:20px;margin:auto;width:95%;display: flex">
                                                         <div>
                                                                 <div class="h1-dashboard">
                                                                     <?php    echo $schedulerow ->num_rows  ?>
                                                                 </div><br>
-                                                                <div class="h3-dashboard" style="font-size: 15px">
+                                                                <div class="h3-dashboard">
                                                                     Today Sessions
                                                                 </div>
                                                         </div>
