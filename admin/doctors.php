@@ -425,7 +425,7 @@
                     <center>
                     
                         <a class="close" href="doctors.php">&times;</a> 
-                        <div style="display: flex;justify-content: center;">
+                        <div style="display: flex;justify-content: center;height: 400px">
                         <div class="abc">
                         <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
                         <tr>
@@ -598,13 +598,13 @@
             if($error_1!='4'){
                     echo '
                     <div id="popup1" class="overlay">
-                            <div class="popup">
+                            <div class="popup" style="overflow-y:scroll;">
                             <center>
                             
                                 <a class="close" href="doctors.php">&times;</a> 
                                 <div style="display: flex;justify-content: center;">
                                 <div class="abc">
-                                <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                                <table width="100%" class="sub-table scrolldown add-doc-form-container" border="0">
                                 <tr>
                                         <td class="label-td" colspan="2">'.
                                             $errorlist[$error_1]
@@ -631,14 +631,15 @@
                                     </tr>
                                     <tr>
                                         
-                                        <td class="label-td" colspan="2">
+                                        <td class="label-td" colspan="2" width="100px">
                                             <label for="name" class="form-label">Name: </label>
                                         </td>
+                                        
                                     </tr>
                                     <tr>
-                                        <td class="label-td" colspan="2">
+                                        <td class="label-td" colspan="2" align="left">
                                             <input type="text" name="name" class="input-text" placeholder="Doctor Name" value="'.$name.'" required><br>
-                                        </td>
+                                        </td> 
                                         
                                     </tr>
                                     
