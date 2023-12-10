@@ -21,9 +21,9 @@ body{
 
 /*------custom-scroll-bar - from w3schools.com------------------*/
 /* width */
-/* ::-webkit-scrollbar {
+ /* ::-webkit-scrollbar {
     width: 5px;
-  }
+  } */
   
   /* Track */
   /* ::-webkit-scrollbar-track {
@@ -37,9 +37,9 @@ body{
   } */
   
   /* Handle on hover */
-  /* ::-webkit-scrollbar-thumb:hover {
+   /* ::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  } */ 
+  } */
 
 
 

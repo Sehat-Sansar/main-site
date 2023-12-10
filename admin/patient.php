@@ -98,7 +98,7 @@
                 </tr>
             </table>
         </div>
-        <div class="dash-body">
+        <div class="dash-body" style="padding-right:50px">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                     <td width="13%">
@@ -146,9 +146,7 @@
                         ?>
                         </p>
                     </td>
-                    <td width="10%">
-                        <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
-                    </td>
+                    
 
 
                 </tr>
@@ -306,7 +304,7 @@
             $address=$row["paddress"];
             echo '
             <div id="popup1" class="overlay">
-                    <div class="popup">
+                    <div class="popup" style="margin-top:10px;height:680px">
                     <center>
                         <a class="close" href="patient.php">&times;</a>
                         <div class="content">
