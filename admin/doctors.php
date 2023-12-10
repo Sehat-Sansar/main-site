@@ -51,13 +51,13 @@
                     
                </tr>
                 <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-dashbord menu-active menu-icon-dashbord-active" >
-                        <a href="index.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Dashboard</p></a></div></a>
+                    <td class="menu-btn menu-icon-dashbord" >
+                        <a href="index.php" class="non-style-link-menu "><div><p class="menu-text">Dashboard</p></a></div></a>
                     </td>
                 </tr>
                 <tr class="menu-row">
-                    <td class="menu-btn menu-icon-doctor ">
-                        <a href="doctors.php" class="non-style-link-menu "><div><p class="menu-text">Doctors</p></a></div>
+                    <td class="menu-btn menu-icon-doctor menu-active menu-icon-doctor-active ">
+                        <a href="doctors.php" class="non-style-link-menu non-style-link-menu-active "><div><p class="menu-text">Doctors</p></a></div>
                     </td>
                 </tr>
                 <tr class="menu-row" >
@@ -75,7 +75,7 @@
                         <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">Patients</p></a></div>
                     </td>
                 </tr>
-                <tr><td><br><br><hr class="hori"></td></tr>
+                <tr><td><br><br><br><hr class="hori"></td></tr>
                 <tr>
                     <td style="padding:0px 10px 10px" colspan="2">
                         <table border="0" class="profile-container">
@@ -98,7 +98,7 @@
                 </tr>
             </table>
         </div>
-        <div class="dash-body">
+        <div class="dash-body" style="margin-top: 15px; margin-right: 50px">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
                 <tr >
                     <td width="13%">
@@ -144,9 +144,9 @@
                         ?>
                         </p>
                     </td>
-                    <td width="10%">
+                    <!-- <td width="10%">
                         <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
-                    </td>
+                    </td> -->
 
 
                 </tr>

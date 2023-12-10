@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/animations.css">  
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
+   
         
     <title>Dashboard</title>
     <style>
@@ -79,7 +80,7 @@
                         <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">Patients</p></a></div>
                     </td>
                 </tr>
-                <tr><td><br><br><hr class="hori"></td></tr>
+                <tr><td><br><br><br><hr class="hori"></td></tr>
                 <tr>
                     <td style="padding:0px 10px 10px" colspan="2">
                         <table border="0" class="profile-container">
@@ -93,7 +94,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
+                                <td colspan="2" style="padding:0px;margin:0px;">
                                     <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
@@ -102,7 +103,7 @@
                 </tr>
             </table>
         </div>
-        <div class="dash-body" style="margin-top: 15px">
+        <div class="dash-body" style="margin-top: 15px; margin-right: 50px">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;" >
                         
                         <tr >
@@ -154,11 +155,17 @@
 
                                 ?>
                                 </p>
-                            </td>
+                            <!-- </td>
                             <td width="10%">
-                                <button  class="btn-label"  style="display: flex;justify-content: center;align-items: center;"><img src="../img/calendar.svg" width="100%"></button>
-                            </td>
-        
+                                <div class="btn-label"  style="display: flex;justify-content: center;align-items: center;">
+                             <button  > -->
+                                <!-- <img src="../img/calendar.svg" width="100%">  -->
+                                <!-- <label for="calender" class="label"><img src="../img/calendar.svg" width="100%"></label>
+                                <input type="date" class="input">
+                             </button> -->
+                            <!-- </div>
+                            </td> --> 
+    
         
                         </tr>
                 <tr>
@@ -168,7 +175,8 @@
                         <table class="filter-container" style="border: none;" border="0">
                             <tr>
                                 <td colspan="4">
-                                    <p style="font-size: 20px;font-weight:600;padding-left: 12px;">Status</p>
+                                    <!-- <p style="font-size: 20px;font-weight:600;padding-left: 12px;">Status</p> -->
+                                    <br><br>
                                 </td>
                             </tr>
                             <tr>
@@ -205,19 +213,19 @@
                                                     <?php    echo $appointmentrow ->num_rows  ?>
                                                 </div><br>
                                                 <div class="h3-dashboard" >
-                                                    NewBooking &nbsp;&nbsp;
+                                                    New Booking &nbsp;&nbsp;
                                                 </div>
                                         </div>
                                                 <div class="btn-icon-back dashboard-icons" style="margin-left: 0px;background-image: url('../img/icons/book-hover.svg');"></div>
                                     </div>
                                 </td>
                                 <td style="width: 25%;">
-                                    <div  class="dashboard-items"  style="padding:20px;margin:auto;width:95%;display: flex;padding-top:26px;padding-bottom:26px;">
+                                    <div  class="dashboard-items"  style="padding:20px;margin:auto;width:95%;display: flex">
                                         <div>
                                                 <div class="h1-dashboard">
                                                     <?php    echo $schedulerow ->num_rows  ?>
                                                 </div><br>
-                                                <div class="h3-dashboard" style="font-size: 15px">
+                                                <div class="h3-dashboard">
                                                     Today Sessions
                                                 </div>
                                         </div>
@@ -241,16 +249,27 @@
                         <table width="100%" border="0" class="dashbord-tables">
                             <tr>
                                 <td>
-                                    <p style="text-align:center;padding:10px;padding-left:48px;padding-bottom:0;font-size:27px;font-weight:700;color:var(--primarycolor);">
+                                    <p style="text-align:center;padding:10px 10px 2px 10px;padding-left:48px;padding-bottom:0;font-size:27px;font-weight:700;color:var(--primarycolor);">
                                         Upcoming Appointments until Next <?php  
                                         echo date("l",strtotime("+1 week"));
                                         ?>
                                     </p>
-                                    <p style="text-align:center;padding-bottom:19px;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
-                                        Here's Quick access to Upcoming Appointments until 7 days<br>
-                                        More details available in @Appointment section.
-                                    </p>
+                                    <!-- <p style="text-align:center;padding-bottom:19px;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
+                                        Here's Quick access to Upcoming Appointments until 7 days <br>
+                                        More details available in @Appointment section. <br><br>
+                                    </p> -->
 
+                                </td>
+                                <td>
+                                    <p style="text-align:center;padding:10px;padding-left:48px;padding-bottom:0;font-size:27px;font-weight:700;color:var(--primarycolor);">
+                                        Upcoming Sessions until Next <?php  
+                                        echo date("l",strtotime("+1 week"));
+                                        ?>
+                                    </p>
+                                    <!-- <p style="padding-bottom:19px;text-align:center;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
+                                        Here's Quick access to Upcoming Sessions that Scheduled until 7 days 
+                                        Add,Remove and Many features available in @Schedule section.
+                                    </p> -->
                                 </td>
                                 
                             </tr>
@@ -261,26 +280,11 @@
                                         <table width="85%" class="sub-table scrolldown" border="0">
                                         <thead>
                                         <tr>    
-                                                <th class="table-headin" style="font-size: 12px;">
-                                                        
-                                                    Appointment number
-                                                    
-                                                </th>
-                                                <th class="table-headin">
-                                                    Patient name
-                                                </th>
-                                                <th class="table-headin">
-                                                    
-                                                
-                                                    Doctor
-                                                    
-                                                </th>
-                                                <th class="table-headin">
-                                                    
-                                                
-                                                    Session
-                                                    
-                                                </th>
+                                                <th class="table-headin"> Appointment number </th>
+                                                <th class="table-headin">Patient name </th>
+                                                <th class="table-headin">Doctor </th>
+                                                <th class="table-headin">Session</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -293,7 +297,7 @@
                 
                                                 if($result->num_rows==0){
                                                     echo '<tr>
-                                                    <td colspan="3">
+                                                    <td colspan="4">
                                                     <br><br><br><br>
                                                     <center>
                                                     <img src="../img/notfound.svg" width="25%">
@@ -355,50 +359,15 @@
                                         </div>
                                         </center>
                                 </td>
-                                
-                            </tr>
-                            <tr>
-                            <td>
-                                    <center>
-                                        <a href="schedule.php" class="non-style-link"><button class="btn-primary btn" style="width:85%">Show all Sessions</button></a>
-                                    </center><br>
-                                </td>
-                            </tr>
-                            <tr>
-                            <td>
-                                    <p style="text-align:center;padding:10px;padding-left:48px;padding-bottom:0;font-size:27px;font-weight:700;color:var(--primarycolor);">
-                                        Upcoming Sessions  until Next <?php  
-                                        echo date("l",strtotime("+1 week"));
-                                        ?>
-                                    </p>
-                                    <p style="padding-bottom:19px;text-align:center;padding-left:50px;font-size:15px;font-weight:500;color:#212529e3;line-height: 20px;">
-                                        Here's Quick access to Upcoming Sessions that Scheduled until 7 days<br>
-                                        Add,Remove and Many features available in @Schedule section.
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                            <td width="50%" style="padding: 0;">
+                                <td width="50%" style="padding: 0;">
                                     <center>
                                         <div class="abc scroll" style="padding: 0;margin: 0;">
                                         <table width="85%" class="sub-table scrolldown" border="0" >
                                         <thead>
                                         <tr>
-                                                <th class="table-headin">
-                                                    
-                                                
-                                                Session Title
-                                                
-                                                </th>
-                                                
-                                                <th class="table-headin">
-                                                    Doctor
-                                                </th>
-                                                <th class="table-headin">
-                                                    
-                                                    Sheduled Date & Time
-                                                    
-                                                </th>
+                                                <th class="table-headin">Session Title </th>
+                                                <th class="table-headin"> Doctor</th>
+                                                <th class="table-headin"> Sheduled Date & Time </th>
                                                     
                                                 </tr>
                                         </thead>
@@ -461,23 +430,23 @@
                                         </div>
                                         </center>
                                 </td>
+                                
                             </tr>
                             <tr>
-                                <td>
+                            <td>
+                                    <center>
+                                        <a href="schedule.php" class="non-style-link"><button class="btn-primary btn" style="width:85%">Show all Sessions</button></a>
+                                    </center><br>
+                                </td>
+                                <td style="padding-top:0px">
                                     <center>
                                         <a href="appointment.php" class="non-style-link"><button class="btn-primary btn" style="width:85%">Show all Appointments</button></a>
                                     </center>
                                 </td>
-                                
                             </tr>
                         </table>
                     </td>
 
-                </tr>
-                        </table>
-                        </center>
-                        </td>
-                </tr>
             </table>
         </div>
     </div>
