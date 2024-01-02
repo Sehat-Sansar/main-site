@@ -248,12 +248,12 @@
                                 Name
                                 
                                 </th>
-                                <th class="table-headin">
+                                <!-- <th class="table-headin">
                                     
                                 
                                     NIC
                                     
-                                </th>
+                                </th> -->
                                 <th class="table-headin">
                                 
                             
@@ -266,6 +266,11 @@
                                 <th class="table-headin">
                                     
                                     Date of Birth
+                                    
+                                </th>
+                                <th class="table-headin">
+
+                                    Medical Records
                                     
                                 </th>
                                 <th class="table-headin">
@@ -304,7 +309,7 @@
                                     $pid=$row["pid"];
                                     $name=$row["pname"];
                                     $email=$row["pemail"];
-                                    $nic=$row["pnic"];
+
                                     $dob=$row["pdob"];
                                     $tel=$row["ptel"];
                                     
@@ -312,9 +317,7 @@
                                         <td> &nbsp;'.
                                         substr($name,0,35)
                                         .'</td>
-                                        <td>
-                                        '.substr($nic,0,12).'
-                                        </td>
+                        
                                         <td>
                                             '.substr($tel,0,10).'
                                         </td>
@@ -324,10 +327,17 @@
                                         <td>
                                         '.substr($dob,0,10).'
                                         </td>
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="" class="non-style-link"><button  class="btn-primary-soft btn button-icon "  style="padding-left: 20px;padding-top: 12px;padding-bottom: 12px;margin: 3px 0 3px 0;"><font class="tn-in-text">Lab Reports</font></button></a>
+                                       
+                                        </div>
+                                        </td>
                                         <td >
                                         <div style="display:flex;justify-content: center;">
                                         
-                                        <a href="?action=view&id='.$pid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                        <a href="?action=view&id='.$pid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin: 3px 0 3px 0;"><font class="tn-in-text">View</font></button></a>
                                        
                                         </div>
                                         </td>
@@ -361,7 +371,7 @@
             $row=$result->fetch_assoc();
             $name=$row["pname"];
             $email=$row["pemail"];
-            $nic=$row["pnic"];
+
             $dob=$row["pdob"];
             $tele=$row["ptel"];
             $address=$row["paddress"];
@@ -407,14 +417,7 @@
                                 '.$email.'<br><br>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
-                                </td>
-                                <td class="label-td" colspan="2">
-                                '.$nic.'<br><br>
-                                </td>
-                            </tr>
+                            
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Tele" class="form-label">Telephone: </label>

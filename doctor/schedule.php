@@ -216,7 +216,7 @@
                                 </th>
                                 <th class="table-headin">
                                     
-                                Max num that can be booked
+                                Prescription
                                     
                                 </th>
                                 
@@ -254,6 +254,7 @@
                                 for ( $x=0; $x<$result->num_rows;$x++){
                                     $row=$result->fetch_assoc();
                                     $scheduleid=$row["scheduleid"];
+                                    $prescribe=$row["prescribe"];
                                     $title=$row["title"];
                                     $docname=$row["docname"];
                                     $scheduledate=$row["scheduledate"];
@@ -268,7 +269,8 @@
                                             '.substr($scheduledate,0,10).' '.substr($scheduletime,0,5).'
                                         </td>
                                         <td style="text-align:center;">
-                                            '.$nop.'
+                                        <a href="?action=view&id=1'.$prescribe.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-prescribe"  style="padding-left: 20px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">📝 Prescribe</font></button></a>
+                                        &nbsp;&nbsp;&nbsp;
                                         </td>
 
                                         <td>
@@ -331,6 +333,7 @@
             $row=$result->fetch_assoc();
             $docname=$row["docname"];
             $scheduleid=$row["scheduleid"];
+            $prescribe=$row["prescribe"];
             $title=$row["title"];
             $scheduledate=$row["scheduledate"];
             $scheduletime=$row["scheduletime"];

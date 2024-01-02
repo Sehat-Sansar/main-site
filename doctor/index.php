@@ -197,7 +197,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="width: 25%;">
+                                                <!-- <td style="width: 25%;">
                                                     <div  class="dashboard-items"  style="padding:20px;margin:auto;width:95%;display: flex">
                                                         <div>
                                                                 <div class="h1-dashboard">
@@ -209,14 +209,14 @@
                                                         </div>
                                                                 <div class="btn-icon-back dashboard-icons" style="background-image: url('../img/icons/doctors-hover.svg');"></div>
                                                     </div>
-                                                </td>
-                                                <td style="width: 25%;">
-                                                    <div  class="dashboard-items"  style="padding:20px;margin:auto;width:95%;display: flex;">
-                                                        <div>
+                                                </td> -->
+                                                <td colspan=2 style="width: 25%;">
+                                                    <div  class="dashboard-items"  style="padding:20px;margin:auto;width:97.5%;display: flex;">
+                                                        <div style="margin-left:90px;">
                                                                 <div class="h1-dashboard">
                                                                     <?php    echo $patientrow->num_rows  ?>
                                                                 </div><br>
-                                                                <div class="h3-dashboard">
+                                                                <div class="h3-dashboard" >
                                                                     All Patients &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 </div>
                                                         </div>
