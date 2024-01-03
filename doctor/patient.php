@@ -330,7 +330,7 @@
                                         <td>
                                         <div style="display:flex;justify-content: center;">
                                         
-                                        <a href="" class="non-style-link"><button  class="btn-primary-soft btn button-icon "  style="padding-left: 20px;padding-top: 12px;padding-bottom: 12px;margin: 3px 0 3px 0;"><font class="tn-in-text">Lab Reports</font></button></a>
+                                        <a href="../doctor/lab_reports.php" class="non-style-link"><button  class="btn-primary-soft btn button-icon "  style="padding-left: 20px;padding-top: 12px;padding-bottom: 12px;margin: 3px 0 3px 0;"><font class="tn-in-text">Lab Reports</font></button></a>
                                        
                                         </div>
                                         </td>
