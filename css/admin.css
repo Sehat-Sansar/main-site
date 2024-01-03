@@ -31,13 +31,8 @@
     font-weight: bolder;
     font-size: 35px;
     padding-left: 20px;
-<<<<<<< HEAD
     /* animation: transitionIn-Y-over 0.5s;
-    text-shadow: 0px 0px; */
-=======
-    animation: transitionIn-Y-over 0.5s;
-    text-shadow: 0px;
->>>>>>> ecd65c718d4e6692ad4a638975489875d7c18cda
+    text-shadow: 0px; */
 }
 
 .profile-title{
